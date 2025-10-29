@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FC Barcelona Squad 2025/26</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico"> </head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1 class="logo">FC Barcelona 🔵🔴</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#squad">Squad</a></li>
+                    <li><a href="#bench">Bench</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section id="home" class="page-section">
+            <h2>Welcome to FC Barcelona</h2>
+            <p>
+                Futbol Club Barcelona, also known as Barça, is a professional football club based in Barcelona, Catalonia, Spain. Founded in 1899, the club has become a symbol of Catalan culture and Catalanism, hence the motto "Més que un club" (More than a club). This page provides the complete information for the first-team squad for the 2025/26 season.
+            </p>
+            <div class="intro-stats">
+                <div>🏆 **La Liga Titles:** 27+</div>
+                <div>🏆 **Champions League:** 5</div>
+                <div>🏟 **Stadium:**Camp Nou</div>
+            </div>
+            <a href="#squad" class="btn primary-btn">View Current Squad</a>
+            
+        </section>
+
+        <section id="squad" class="page-section hidden">
+            <h2>First Team Squad - 2025/26</h2>
+
+            <div class="controls-bar">
+                <input type="text" id="player-search" placeholder="Search by name..." aria-label="Search Player by Name">
+                <select id="position-filter" aria-label="Filter Player by Position">
+                    <option value="All">All Positions</option>
+                    <option value="Goalkeeper">Goalkeeper</option>
+                    <option value="Defender">Defender</option>
+                    <option value="Midfielder">Midfielder</option>
+                    <option value="Forward">Forward</option>
+                </select>
+            </div>
+            
+            <div id="squad-list" class="squad-grid">
+                </div>
+            
+            <h3>Key Performance Stats</h3>
+            <div class="table-container">
+                <table id="stats-table">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Player</th>
+                            <th data-sort-by="appearances" class="sortable">Appearances ⬇️</th>
+                            <th data-sort-by="goals" class="sortable">Goals</th>
+                            <th data-sort-by="assists" class="sortable">Assists</th>
+                        </tr>
+                    </thead>
+                    <tbody id="stats-table-body">
+                        </tbody>
+                </table>
+            </div>
+
+        </section>
+        
+        <section id="bench" class="page-section hidden">
+            <h2>Substitute & Reserve Players</h2>
+            <p>This section lists the current reserve and substitute players for the first team.</p>
+            <div id="bench-list" class="squad-grid">
+                </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-info">
+                <h4>FC Barcelona Official</h4>
+                <p>Website designed for an academic/demonstration purpose.</p>
+            </div>
+            <p class="credit-note">Data based on official FC Barcelona squad 2025/26 (Placeholder Data).</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
